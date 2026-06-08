@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Brand Design System Overrides (Editorial Engine Alignment)
+   ========================================================================== */
+
+/* 1. Base Typography and Global Colors */
+body, input, select, textarea {
+    color: #2d5a1e !important; /* Olive Green Body text */
+}
+
+/* Headings: Override template's default slate gray (#3d4449) */
+h1, h2, h3, h4, h5, h6, 
+#header .logo strong,
+#sidebar h2 {
+    color: #5a2e82 !important; /* Deep Purple Brand Heading */
+}
+
+/* Hard text elements */
+strong, b {
+    color: #9e1b1b !important; /* Crest Red Accent text */
+    font-weight: 700;
+}
+
+/* 2. Global Structural Accents (Replacing Pink #f56a6a) */
+a {
+    color: #5a2e82;
+    border-bottom-color: rgba(90, 46, 130, 0.5);
+}
+
+a:hover {
+    color: #d4af37 !important; /* Transition to bright gold on hover */
+    border-bottom-color: #d4af37;
+}
+
+/* Section Header Underlines */
+header.major > :last-child {
+    border-bottom-color: #c4a457 !important; /* Muted Gold Accents */
+}
+
+#header {
+    border-bottom-color: #c4a457 !important;
+}
+
+/* Feature List Icons */
+.features article .icon:before {
+    color: #5a2e82 !important;
+}
+
+/* 3. Buttons and Interactive States */
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+    background-color: #5a2e82 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+    background-color: #d4af37 !important; /* Gold hover state */
+    color: #ffffff !important;
+}
+
+/* Outline Buttons (like the "Learn More" banner button) */
+.button {
+    box-shadow: inset 0 0 0 2px #5a2e82 !important;
+    color: #5a2e82 !important;
+}
+
+.button:hover {
+    background-color: rgba(90, 46, 130, 0.05) !important;
+}
+
+/* 4. Navigation Menu Interactivity */
+#menu ul a:hover, 
+#menu ul span:hover {
+    color: #5a2e82 !important;
+}
+
+#menu ul a.opener:hover:before, 
+#menu ul span.opener:hover:before {
+    color: #5a2e82 !important;
+}
+
+ul.pagination li > .page.active {
+    background-color: #5a2e82 !important;
+}
+
+/* Contact Module Pinpoints */
+ul.contact li:before {
+    color: #c4a457 !important;
+}
