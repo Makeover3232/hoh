@@ -94,3 +94,13 @@ ul.pagination li > .page.active {
 ul.contact li:before {
     color: #c4a457 !important;
 }
+/* Force sidebar footer to the absolute bottom */
+#sidebar > .inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#sidebar > .inner > #footer {
+    margin-top: auto;
+}
